@@ -1,0 +1,226 @@
+:root {
+  --blue-text: rgba(33, 150, 243, 1);
+
+  --black-text-logo: rgba(0, 0, 0, 1);
+
+  --black-text: rgba(33, 33, 33, 1);
+
+  --gray-text: rgba(117, 117, 117, 1);
+
+  --white-text: rgba(255, 255, 255, 1);
+
+  --white-text-op60: rgba(255, 255, 255, 0.6);
+
+  --back-header-white: rgba(255, 255, 255, 1);
+
+  --back-dark: rgba(47, 48, 58, 1);
+
+  --back-gray: rgba(245, 244, 250, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--back-header-white);
+}
+
+footer {
+  background-color: var(--back-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-style {
+  color: #000000;
+}
+
+/* Навигация */
+.nav-items:hover,
+.nav-items:focus {
+  color: var(--blue-text);
+}
+
+.nav-contacts:hover,
+.nav-contacts:focus {
+  color: var(--blue-text);
+}
+
+.nav-items {
+  text-decoration: none;
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.nav-items.current {
+  color: var(--blue-text);
+}
+
+.nav-contacts {
+  text-decoration: none;
+  color: var(--gray-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+/* Герой */
+.hero {
+  background-color: var(--back-dark);
+}
+
+.hero-title {
+  color: var(--white-text);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: #2196f3;
+}
+
+/* Приемущества */
+
+.features-item {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--gray-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Чем мы занимаемся */
+.activity {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+}
+
+/* Наша команда */
+.team-section {
+  background-color: var(--back-gray);
+}
+
+.team-header {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+}
+
+.team-names {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-positions {
+  color: var(--gray-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Подвал */
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-logo-style {
+  color: #fff;
+}
+
+.footer-adress {
+  font-style: normal;
+  color: var(--white-text);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-contacts {
+  color: var(--white-text-op60);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Портфолио */
+.filter-buttons {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f4fa;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.filter-buttons:hover,
+.filter-buttons:focus {
+  background: #2196f3;
+  color: #f5f4fa;
+  box-shadow: 0px 4px 4px 0px 0, 0, 0, 0, 25;
+}
+
+.card-name {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.card-info {
+  color: var(--gray-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
