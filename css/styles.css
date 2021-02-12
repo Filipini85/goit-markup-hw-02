@@ -1,23 +1,19 @@
 :root {
-  --blue-text: rgba(33, 150, 243, 1);
+  --active-elements: rgba(33, 150, 243, 1);
 
-  --black-text-logo: rgba(0, 0, 0, 1);
+  --title-text: rgba(33, 33, 33, 1);
 
-  --black-text: rgba(33, 33, 33, 1);
+  --description-text: rgba(117, 117, 117, 1);
 
-  --gray-text: rgba(117, 117, 117, 1);
+  --hero-title: rgba(255, 255, 255, 1);
 
-  --white-text: rgba(255, 255, 255, 1);
+  --footer-contacts-op60: rgba(255, 255, 255, 0.6);
 
-  --white-text-op60: rgba(255, 255, 255, 0.6);
+  --background-header: rgba(255, 255, 255, 1);
 
-  --back-header-white: rgba(255, 255, 255, 1);
+  --background-hero: rgba(47, 48, 58, 1);
 
-  --back-dark: rgba(47, 48, 58, 1);
-
-  --back-gray: rgba(245, 244, 250, 1);
-
-  --back-card-white: rgba(238, 238, 238, 1);
+  --backgound-team: rgba(245, 244, 250, 1);
 }
 
 body {
@@ -25,11 +21,11 @@ body {
 }
 
 header {
-  background-color: var(--back-header-white);
+  background-color: var(--background-header);
 }
 
 footer {
-  background-color: var(--back-dark);
+  background-color: var(--background-hero);
 }
 
 ul {
@@ -52,6 +48,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-style {
@@ -61,46 +58,49 @@ ul {
 /* Навигация */
 .nav-items:hover,
 .nav-items:focus {
-  color: var(--blue-text);
+  color: var(--active-elements);
 }
 
 .nav-contacts:hover,
 .nav-contacts:focus {
-  color: var(--blue-text);
+  color: var(--active-elements);
 }
 
 .nav-items {
   text-decoration: none;
-  color: var(--black-text);
+  color: var(--title-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
+  letter-spacing: 0.02em;
 }
 
 .nav-items.current {
-  color: var(--blue-text);
+  color: var(--active-elements);
 }
 
 .nav-contacts {
   text-decoration: none;
-  color: var(--gray-text);
+  color: var(--description-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
+  letter-spacing: 0.02em;
 }
 
 /* Герой */
 .hero {
-  background-color: var(--back-dark);
+  background-color: var(--background-hero);
 }
 
 .hero-title {
-  color: var(--white-text);
+  color: var(--hero-title);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .hero-button {
@@ -108,10 +108,11 @@ ul {
   height: 50px;
   left: 700px;
   top: 430px;
-  color: var(--white-text);
+  color: var(--hero-title);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -120,32 +121,35 @@ ul {
 
 /* Приемущества */
 
-.features-item {
-  color: var(--black-text);
+.features-title {
+  color: var(--title-text);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.21;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-text {
-  color: var(--gray-text);
+  color: var(--description-text);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
 .activity {
-  color: var(--black-text);
+  color: var(--title-text);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* Наша команда */
 .team-section {
-  background-color: var(--back-gray);
+  background-color: var(--backgound-team);
 }
 
 .team-item {
@@ -155,31 +159,33 @@ ul {
   left: 518px;
   top: 1636px;
   text-align: center;
-  letter-spacing: 0.03em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-header {
-  color: var(--black-text);
+  color: var(--title-text);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .team-names {
-  color: var(--black-text);
+  color: var(--title-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .team-positions {
-  color: var(--gray-text);
+  color: var(--description-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* Подвал */
@@ -190,6 +196,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .footer-logo-style {
@@ -198,20 +205,22 @@ ul {
 
 .footer-adress {
   font-style: normal;
-  color: var(--white-text);
+  color: var(--hero-title);
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-contacts {
-  color: var(--white-text-op60);
+  color: var(--footer-contacts-op60);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Портфолио */
@@ -222,6 +231,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -236,23 +246,25 @@ ul {
 }
 
 .card-item {
-  background-color: var(--back-header-white);
+  background-color: var(--background-header);
   width: 370px;
   height: 404px;
   left: 401px;
   top: 711px;
 }
 
-.card-name {
-  color: var(--black-text);
+.card-title {
+  color: var(--title-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.card-info {
-  color: var(--gray-text);
+.card-text {
+  color: var(--description-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
 }
